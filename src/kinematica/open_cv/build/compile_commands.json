@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/Main.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Main.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Main.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/CalibrateImage.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/CalibrateImage.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/CalibrateImage.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/Filter.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Filter.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Filter.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/Color.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Color.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Color.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/Shape.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Shape.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Shape.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build",
+  "command": "/usr/bin/clang++-6.0  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"vision\\\" -I/home/stein/Desktop/Herkansing_opencv/src/open_cv/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/lib/x86_64-linux-gnu -isystem /usr/include/opencv  -std=c++14 -Wall -Werror -Wextra -Wconversion -g   -o CMakeFiles/Intro.dir/src/Programhandler.cpp.o -c /home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Programhandler.cpp",
+  "file": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/src/Programhandler.cpp"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/clang++-6.0  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC     -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+}
+]

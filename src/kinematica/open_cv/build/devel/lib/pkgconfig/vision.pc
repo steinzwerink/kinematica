@@ -1,0 +1,8 @@
+prefix=/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/devel
+
+Name: vision
+Description: Description of vision
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/stein/Desktop/Herkansing_opencv/src/open_cv/build/devel/lib 
+Requires: actionlib_msgs

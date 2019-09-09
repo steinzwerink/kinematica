@@ -1,0 +1,3 @@
+/home/stein/Desktop/Herkansing_opencv/open_cv/CMakeFiles/rebuild_cache.dir
+/home/stein/Desktop/Herkansing_opencv/open_cv/CMakeFiles/Intro.dir
+/home/stein/Desktop/Herkansing_opencv/open_cv/CMakeFiles/edit_cache.dir

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stein/wor_interface/opencv/Main.cpp
+Programhandler.h
+/home/stein/wor_interface/opencv/Programhandler.h
+thread
+-
+
+/home/stein/wor_interface/opencv/Programhandler.h
+Color.h
+/home/stein/wor_interface/opencv/Color.h
+Shape.h
+/home/stein/wor_interface/opencv/Shape.h
+stdint.h
+-
+
+/home/stein/wor_interface/opencv/Shape.h
+Filter.h
+/home/stein/wor_interface/opencv/Filter.h
+

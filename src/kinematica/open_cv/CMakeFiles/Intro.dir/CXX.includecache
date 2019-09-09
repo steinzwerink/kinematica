@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/CalibrateImage.cpp
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/Color.cpp
+include/Color.h
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/include/Color.h
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/Filter.cpp
+include/Filter.h
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/include/Filter.h
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/Main.cpp
+src/Programhandler.h
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/src/Programhandler.h
+thread
+-
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/Programhandler.cpp
+include/Programhandler.h
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/include/Programhandler.h
+
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/Shape.cpp
+include/Shape.h
+/home/stein/Desktop/Herkansing_opencv/open_cv/src/include/Shape.h
+
