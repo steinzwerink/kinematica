@@ -5,9 +5,7 @@
 #include <utility>
 #include <iomanip>
 
-/**
- *
- */
+
 template <class T, std::size_t M, std::size_t N>
 Matrix<T, M, N>::Matrix(T value)
 {
@@ -43,7 +41,7 @@ Matrix<T, M, N>::Matrix(const std::initializer_list<T> &aList)
 template <class T, std::size_t M, std::size_t N>
 Matrix<T, M, N>::Matrix(const std::initializer_list<std::initializer_list<T>> &aList)
 {
-	// Check the arguments, the static assert assures that there is at least 1 M and 1 N!
+	
 	assert(aList.size() == M && (*aList.begin()).size() == N);
 
 	auto row_iter = aList.begin();
@@ -319,12 +317,12 @@ Matrix<T, M, N> Matrix<T, M, N>::gauss() const
 
 		std::size_t nonZeroColumn = pivotColumn;
 		T divideValue = result[cRow][nonZeroColumn];
-		for (std::size_t divideColumn = 0; divideColumn < N; divideColumn++)
+		for (std::size_t divideColumn = 0; divideColumn < N; ++divideColumn)
 		{
 			result[cRow][divideColumn] = result[cRow][divideColumn] / divideValue;
 		}
 
-		for (std::size_t zeroRow = cRow + 1; zeroRow < M; zeroRow++)
+		for (std::size_t zeroRow = cRow + 1; zeroRow < M; ++zeroRow)
 		{
 			T cRowValue = result[zeroRow][pivotColumn];
 			for (std::size_t multiplyColumn = 0; multiplyColumn < N; multiplyColumn++)
@@ -391,11 +389,11 @@ Matrix<T, M, N> Matrix<T, M, N>::inverse() const
 	// Get the identity matrix
 	Matrix<T, M, N> identityMatrix = result.identity();
 	// Gauss eliminate the matrices
-	for (std::size_t cRow = 0, pivotColumn = 0; pivotColumn < N; cRow++, pivotColumn++)
+	for (std::size_t cRow = 0, pivotColumn = 0; pivotColumn < N; ++cRow, ++pivotColumn)
 	{
 		// Swap the row with the highest value to the top.
 		std::size_t maxValueRow = cRow;
-		for (std::size_t i = cRow; i < M; i++)
+		for (std::size_t i = cRow; i < M; ++i)
 		{
 			if (result[i][pivotColumn] > result[maxValueRow][pivotColumn])
 			{
@@ -406,18 +404,17 @@ Matrix<T, M, N> Matrix<T, M, N>::inverse() const
 		std::swap(identityMatrix[maxValueRow], identityMatrix[cRow]);
 		// 1. Divide the first number on the row by itself to get 1
 		T divideValue = result[cRow][pivotColumn];
-		for (std::size_t divideColumn = 0; divideColumn < N; divideColumn++)
+		for (std::size_t divideColumn = 0; divideColumn < N; ++divideColumn)
 		{
 			result[cRow][divideColumn] = result[cRow][divideColumn] / divideValue;
 			identityMatrix[cRow][divideColumn] = identityMatrix[cRow][divideColumn] / divideValue;
 		}
-		// 2. Multiply every other non-zero row by a multiple of the first row to get 0
-		// Loop through the rows
+		
 		for (std::size_t zeroRow = cRow + 1; zeroRow < M; zeroRow++)
 		{
-			// Get the first number from the row if it is non-zero
+			
 			T cRowValue = result[zeroRow][pivotColumn];
-			// Multiply the first number by a multiple of the first row and subtract the multiplied value from the row
+			
 			for (std::size_t multiplyColumn = 0; multiplyColumn < N; multiplyColumn++)
 			{
 				result[zeroRow][multiplyColumn] -= (result[cRow][multiplyColumn] * cRowValue);
@@ -425,16 +422,13 @@ Matrix<T, M, N> Matrix<T, M, N>::inverse() const
 			}
 		}
 	}
-	// Jordan eliminate the matrices
+	
 	for (int cRow = M - 1, pivotColumn = N - 1; pivotColumn >= 0; cRow--, pivotColumn--)
 	{
 		int zeroRow = cRow - 1;
-		// 2. Multiply every other non-zero row by a multiple of the first row to get 0
 		for (int currentZeroRow = zeroRow; currentZeroRow >= 0; currentZeroRow--)
 		{
-			// Get the first number from the row if it is non-zero
 			T cRowValue = result[currentZeroRow][pivotColumn];
-			// Multiply the first number by a multiple of the first row and subtract the multiplied value from the row
 			for (std::size_t multiplyColumn = N; multiplyColumn-- > 0;)
 			{
 				result[currentZeroRow][multiplyColumn] -= (result[cRow][multiplyColumn] * cRowValue);
@@ -471,9 +465,9 @@ bool equals(const Matrix<T, 1, N> &lhs,
 			const T aPrecision /*= std::numeric_limits<T>::epsilon()*/,
 			const unsigned long aFactor /*= 1*/)
 {
-	// Row vector equality
+	
 	bool lReturn = true;
-	for (std::size_t currentColumn = 0; currentColumn < N - 1; currentColumn++)
+	for (std::size_t currentColumn = 0; currentColumn < N - 1; ++currentColumn)
 	{
 		T diff = lhs[0][currentColumn] - rhs[0][currentColumn];
 		if ((diff > (aPrecision * aFactor)) || (-diff > (aPrecision * aFactor)))
@@ -495,7 +489,7 @@ bool equals(const Matrix<T, M, 1> &lhs,
 {
 	// Column vector equality
 	bool lReturn = true;
-	for (std::size_t cRow = 0; cRow < M; cRow++)
+	for (std::size_t cRow = 0; cRow < M; ++cRow)
 	{
 		T diff = lhs[cRow][0] - rhs[cRow][0];
 		if ((diff > (aPrecision * static_cast<T>(aFactor))) || (-diff > (aPrecision * static_cast<T>(aFactor))))
@@ -517,7 +511,7 @@ bool equals(const Matrix<T, M, N> &lhs,
 {
 	// Full matrix equality
 	bool lReturn = true;
-	for (std::size_t cRow = 0; cRow < M; cRow++)
+	for (std::size_t cRow = 0; cRow < M; ++cRow)
 	{
 		for (std::size_t currentColumn = 0; currentColumn < N; currentColumn++)
 		{
